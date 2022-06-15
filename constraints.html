@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>constraints</title>
+        <style type="text/css">
+            h1{
+                color: blue;
+                text-align: center;
+                top: 1px;
+                position: fixed;
+            }
+            body{
+                font-size: 17px;
+                line-height: 26px;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(b5.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70vh;
+                width: 50%;
+                background-color: rgba(0, 0,0,0.8);
+                font-size: 17px;
+                line-height: 26px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><u>Integrity Constraints</u></h1>
+        <div id="content">
+            <p>
+                <ul><li>Integrity constraints are a set of rules. It is used to maintain the quality of information.</li>
+                <li>Integrity constraints ensure that the data insertion, updating, and other processes have to be performed in such a way that data integrity is not affected.</li>
+                <li>Thus, integrity constraint is used to guard against accidental damage to the database.</li>
+                <li>1. Domain constraints
+                    Domain constraints can be defined as the definition of a valid set of values for an attribute.
+                    The data type of domain includes string, character, integer, time, date, currency, etc. The value of the attribute must be available in the corresponding domain.</li>
+                <li>2. Entity integrity constraints
+                    The entity integrity constraint states that primary key value can't be null.
+                    This is because the primary key value is used to identify individual rows in relation and if the primary key has a null value, then we can't identify those rows.
+                    A table can contain a null value other than the primary key field.</li>
+                <li>3. Referential Integrity Constraints
+                    A referential integrity constraint is specified between two tables.
+                    In the Referential integrity constraints, if a foreign key in Table 1 refers to the Primary Key of Table 2, then every value of the Foreign Key in Table 1 must be null or be available in Table 2.</li>
+                </ul>
+            </p>
+        </div>
+    </body>
